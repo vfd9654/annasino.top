@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   await sleep(1500);
   selfie.classList.add('is-hidden');
   setInterval(() => {
-    slideshowCursor = (slideshowCursor + 1) % 30;
+    slideshowCursor = (slideshowCursor + 1) % 28;
     nextSlide.src = `images/${slideshowCursor}.jpg`;
     nextSlide.style.opacity = 1;
     currentSlide.style.opacity = 0;
 
     [currentSlide, nextSlide] = [nextSlide, currentSlide];
-  }, 5000);
+  }, 3000);
 });
 
 
